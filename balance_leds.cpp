@@ -5,8 +5,8 @@
 
 // LED Wiring
 // Note: Forward in this instance means postive ERPM, which can actually be backwards if your motor direction is reversed.
-#define LED_PIN_FORWARD 10
-#define LED_PIN_BACKWARD 11
+#define LED_PIN_FORWARD 18
+#define LED_PIN_BACKWARD 17
 #define STARTUP_FORWARD true
 
 // Colors and brightnesses (User selectable between 4 idle/active brightness levels, and 7 colors, these can be set to anything)
@@ -40,6 +40,23 @@ class BalanceLEDs {
     bool isIdleAndFaded;
     uint32_t previousColorForward;
     uint32_t previousColorBackward;
+
+
+   int max(int x, int y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+int min(int x, int y) {
+  if (x < y) {
+    return x;
+  } else {
+    return y;
+  }
+}
 
     void fadeForwardColor(uint32_t desiredColor, uint8_t fadeAmount){
       uint8_t w = desiredColor >> 24;

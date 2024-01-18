@@ -13,8 +13,8 @@ void setup() {
   buttons.setup();
   balanceLEDs.setup();
   
-  Serial.begin(115200);
-  vesc.setSerialPort(&Serial);
+  Serial2.begin(115200, SERIAL_8N1, 32, 33);
+  vesc.setSerialPort(&Serial2);
 }
 
 void loop() {
