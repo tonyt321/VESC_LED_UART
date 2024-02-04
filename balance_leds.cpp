@@ -7,10 +7,10 @@
 
 // LED Wiring
 // Note: Forward in this instance means postive ERPM, which can actually be backwards if your motor direction is reversed.
-#define LED_PIN_FOREWARD 10
-#define LED_PIN_BACKWARD 11
-#define NUM_LEDS_FORWARD 10
-#define NUM_LEDS_BACKWARD 10
+#define LED_PIN_FOREWARD 18
+#define LED_PIN_BACKWARD 17
+#define NUM_LEDS_FORWARD 13
+#define NUM_LEDS_BACKWARD 13
 #define STARTUP_FORWARD true
 
 // Color and brightness
