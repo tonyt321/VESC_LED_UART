@@ -42,6 +42,24 @@ class BalanceLEDs {
     bool isIdle;
     bool isIdleAndFaded;
   
+
+  int max(int x, int y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+int min(int x, int y) {
+  if (x < y) {
+    return x;
+  } else {
+    return y;
+  }
+}
+
+
     CRGB forward[NUM_LEDS_FORWARD];
     CRGB backward[NUM_LEDS_BACKWARD];
 
